@@ -1,7 +1,8 @@
 import streamlit as st
-from utils import set_page_config, load_text
 
-set_page_config()
+def load_text(file_path):
+    with open(file_path, 'r') as file:
+        return file.read()
 
 st.title('Digital Insurgency')
 st.markdown("#### Unleashing the System's Edge")
